@@ -34,9 +34,6 @@ set laststatus=2                              " always show the status bar
 set statusline=%f                             " filename
 set statusline+=%{fugitive#statusline()}      " git branch
 set statusline+=\ Func:%{cfi#get_func_name()} " current function name
-set statusline+=%#warningmsg#                 " See g:statline_syntastic = 0
-set statusline+=%{SyntasticStatuslineFlag()}  " See g:statline_syntastic = 0
-set statusline+=%*                            " See g:statline_syntastic = 0
 set statusline+=%=                            " switch to the right
 set statusline+=\ [%b][0x%B]                  " [character value],[same, in hexadecimal]
 set statusline+=\ Col:%v                      " column number
@@ -56,7 +53,7 @@ let g:SuperTabDefaultCompletionType = "<c-x><c-o>" " Omnicomplete
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_enable_signs=1
-let g:statline_syntastic = 0 " Makes warningmsg in statusline work
+" let g:statline_syntastic = 0 " Makes warningmsg in statusline work
 
 "Elm
 let g:elm_setup_keybindings = 0
