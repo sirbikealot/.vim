@@ -10,6 +10,8 @@ set noswapfile
 set splitbelow
 set splitright
 set incsearch
+set ignorecase
+set smartcase
 set nocursorline
 set number
 set rnu " Relative numbering

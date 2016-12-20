@@ -22,6 +22,7 @@ Plugin 'majutsushi/tagbar' " tag searching
 Plugin 'vim-syntastic/syntastic'
 Plugin 'elmcast/elm-vim'
 Plugin 'lambdatoast/elm.vim'
+Plugin 'bronson/vim-visual-star-search' " extends '*' and '#' searching to visual selection
 "Plugin 'Raimondi/delimitMate'
 "Plugin 'heartsentwined/vim-emblem'
 "Plugin 'kchmck/vim-coffee-script'
