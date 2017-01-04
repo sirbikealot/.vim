@@ -1,10 +1,11 @@
 let mapleader=' '
 
 " Navigation
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+" Mappings replaced by 'vim-tmux-navigator' plugin
+" nnoremap <C-J> <C-W><C-J>
+" nnoremap <C-K> <C-W><C-K>
+" nnoremap <C-L> <C-W><C-L>
+" nnoremap <C-H> <C-W><C-H>
 :runtime macros/matchit.vim " Extends '%' match function to if/else, </>, etc.
 map vrc :vs ~/.vim/vimrc<cr>
 map sc :source ~/.vim/vimrc<cr>
@@ -20,6 +21,10 @@ nmap <S-J> o<Esc>k
 nnoremap Y y$
 " Replace word under cursor globally in file
 :nnoremap <leader>s :%s/\<<C-r><C-w>\>/
+" Alternative to <Esc> for exiting Insert mode
+:inoremap jk <esc>
+" Disable normal <Esc> function to accelerate adoption of above remap
+:inoremap <esc> <nop>
 
 "Ctags
 nnoremap <leader>. :CtrlPTag<cr>
