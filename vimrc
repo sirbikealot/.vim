@@ -6,7 +6,6 @@ source ~/.vim/key_bindings.vim
 "General
 scriptencoding utf-8
 set enc=utf-8
-set noswapfile
 set splitbelow
 set splitright
 set incsearch
@@ -59,8 +58,11 @@ let g:syntastic_enable_signs=1
 
 "Elm
 let g:elm_setup_keybindings = 0
+let g:syntastic_alsways_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
 let g:elm_syntastic_show_warnings = 1
 let g:elm_format_autosave = 1
+let g:syntastic_elm_checkers = ['elm_make']
 
 "Vroom
 "let g:vroom_clear_screen = 0
