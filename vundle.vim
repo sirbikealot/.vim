@@ -24,6 +24,8 @@ Plugin 'elmcast/elm-vim'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'bronson/vim-visual-star-search' " extends '*' and '#' searching to visual selection
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/nerdtree'
 "Plugin 'Raimondi/delimitMate'
 "Plugin 'heartsentwined/vim-emblem'
 "Plugin 'kchmck/vim-coffee-script'
