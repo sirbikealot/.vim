@@ -24,7 +24,7 @@ nnoremap Y y$
 " Alternative to <Esc> for exiting Insert mode
 :inoremap jk <esc>
 " Disable normal <Esc> function to accelerate adoption of above remap
-:inoremap <esc> <nop>
+":inoremap <esc> <nop>
 
 "Ctags
 nnoremap <leader>. :CtrlPTag<cr>

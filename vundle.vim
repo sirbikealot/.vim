@@ -26,6 +26,7 @@ Plugin 'bronson/vim-visual-star-search' " extends '*' and '#' searching to visua
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
+Plugin 'godlygeek/tabular'
 "Plugin 'Raimondi/delimitMate'
 "Plugin 'heartsentwined/vim-emblem'
 "Plugin 'kchmck/vim-coffee-script'
