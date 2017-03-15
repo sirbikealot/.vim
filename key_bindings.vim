@@ -15,8 +15,10 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>e   :edit %%<cr>
 map ,, :w<cr>
 map qq :q!<cr>
-nmap <S-K> O<Esc>j
-nmap <S-J> o<Esc>k
+" Add line above without moving cursor
+" nmap <S-K> O<Esc>j
+" Add line below without moving cursor
+" nmap <S-J> o<Esc>k
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
 " Replace word under cursor globally in file
@@ -24,7 +26,7 @@ nnoremap Y y$
 " Alternative to <Esc> for exiting Insert mode
 :inoremap jk <esc>
 " Disable normal <Esc> function to accelerate adoption of above remap
-":inoremap <esc> <nop>
+" :inoremap <esc> <nop>
 
 "Ctags
 nnoremap <leader>. :CtrlPTag<cr>

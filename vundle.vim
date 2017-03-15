@@ -19,14 +19,16 @@ Plugin 'rking/ag.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'ctrlpvim/ctrlp.vim' " tag searching
 Plugin 'majutsushi/tagbar' " tag searching
-Plugin 'vim-syntastic/syntastic'
 Plugin 'elmcast/elm-vim'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'bronson/vim-visual-star-search' " extends '*' and '#' searching to visual selection
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
-Plugin 'godlygeek/tabular'
+Plugin 'godlygeek/tabular' " Aligns text within a block
+Plugin 'tpope/vim-unimpaired' " Bracket navigation through file structure
+Plugin 'w0rp/ale' " Replacement for syntastic, compat with vim 8
+"Plugin 'vim-syntastic/syntastic'
 "Plugin 'Raimondi/delimitMate'
 "Plugin 'heartsentwined/vim-emblem'
 "Plugin 'kchmck/vim-coffee-script'
