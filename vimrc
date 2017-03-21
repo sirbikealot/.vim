@@ -6,6 +6,7 @@ source ~/.vim/functions.vim
 
 "General
 scriptencoding utf-8
+set t_Co=256
 set enc=utf-8
 set splitbelow
 set splitright
