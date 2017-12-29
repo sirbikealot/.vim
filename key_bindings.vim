@@ -32,6 +32,9 @@ nnoremap Y y$
 nnoremap <leader>. :CtrlPTag<cr>
 nnoremap <silent> <leader>b :TagbarToggle<cr>
 
+"fzf (Fuzzyfinder)
+nnoremap <leader>f :FZF<cr>
+
 "Command-T
 map <leader>vv  :CommandTFlush<cr>\|:CommandT app/views<cr>
 map <leader>cc  :CommandTFlush<cr>\|:CommandT app/controllers<cr>

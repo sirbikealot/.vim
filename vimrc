@@ -52,6 +52,9 @@ set statusline+=%=                            " switch to the right
 set statusline+=\ Col:%v                      " column number
 set statusline+=\ Buf:#%n                     " buffer number
 
+"FuzzyFind (fzf)
+set rtp+=/usr/local/opt/fzf
+
 "Command-T
 let g:CommandTWildIgnore=&wildignore .
   \ ",**/.git/*" .

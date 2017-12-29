@@ -27,8 +27,10 @@ Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
 Plugin 'godlygeek/tabular' " Aligns text within a block
 Plugin 'tpope/vim-unimpaired' " Bracket navigation through file structure
+Plugin 'tpope/vim-repeat' " Enable repeating supported plugin maps with '.'
 Plugin 'w0rp/ale' " Replacement for syntastic, compat with vim 8
 Plugin 'vim-airline/vim-airline'
+Plugin 'junegunn/fzf.vim'
 "Plugin 'vim-syntastic/syntastic'
 "Plugin 'Raimondi/delimitMate'
 "Plugin 'heartsentwined/vim-emblem'
