@@ -31,6 +31,9 @@ nnoremap Y y$
 "Search
 nnoremap \ :Ag<SPACE>
 " map backslash to the_silver_searcher (ag)
+" This behaves slightly differently with fzf.vim (Fuzzyfinder) installed
+" :Ag is defined by fzf.vim, which displays results in a fzf window
+" instead of a quicklist
 
 "Ctags
 nnoremap <leader>. :CtrlPTag<cr>
