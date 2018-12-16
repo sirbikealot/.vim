@@ -54,6 +54,11 @@ set statusline+=\ Buf:#%n                     " buffer number
 
 "FuzzyFind (fzf)
 set rtp+=/usr/local/opt/fzf
+"results window key bindings open result in split window accordingly:
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-s': 'split',
+  \ 'ctrl-v': 'vsplit' }
 
 "Command-T
 let g:CommandTWildIgnore=&wildignore .
