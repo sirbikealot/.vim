@@ -28,6 +28,10 @@ nnoremap Y y$
 " Disable normal <Esc> function to accelerate adoption of above remap
 " :inoremap <esc> <nop>
 
+"Search
+nnoremap \ :Ag<SPACE>
+" map backslash to the_silver_searcher (ag)
+
 "Ctags
 nnoremap <leader>. :CtrlPTag<cr>
 nnoremap <silent> <leader>b :TagbarToggle<cr>
