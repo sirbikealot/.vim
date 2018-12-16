@@ -15,7 +15,9 @@ Plugin 'tyru/current-func-info.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-git'
 Plugin 'ervandew/supertab'
-Plugin 'rking/ag.vim'
+" Plugin 'rking/ag.vim' deprecated in favor of 'mileszs/ack.vim'
+" see 'https://github.com/rking/ag.vim/issues/124#issuecomment-227038003'
+Plugin 'mileszs/ack.vim' "
 Plugin 'tomtom/tcomment_vim'
 Plugin 'ctrlpvim/ctrlp.vim' " tag searching
 Plugin 'majutsushi/tagbar' " tag searching
