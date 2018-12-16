@@ -37,10 +37,11 @@ nnoremap \ :Ag<SPACE>
 
 "Ctags
 nnoremap <leader>. :CtrlPTag<cr>
-nnoremap <silent> <leader>b :TagbarToggle<cr>
+" nnoremap <silent> <leader>b :TagbarToggle<cr> " Replaced with mapping to :Buffers
 
 "fzf (Fuzzyfinder)
 nnoremap <leader>f :FZF<cr>
+nnoremap <leader>b :Buffers<cr>
 
 "Command-T
 map <leader>vv  :CommandTFlush<cr>\|:CommandT app/views<cr>
