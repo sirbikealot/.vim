@@ -42,7 +42,8 @@ nnoremap <leader>. :CtrlPTag<cr>
 " nnoremap <silent> <leader>b :TagbarToggle<cr> " Replaced with mapping to :Buffers
 
 "fzf (Fuzzyfinder)
-nnoremap <leader>f :FZF<cr>
+nnoremap <leader>f :Files<cr>
+nnoremap <leader>p :!fzf --preview 'cat {}'<cr>
 nnoremap <leader>b :Buffers<cr>
 
 "Command-T
