@@ -27,6 +27,7 @@ set directory=/tmp/
 set formatoptions-=o " Do not automatically insert the current comment leader after hitting 'o' or 'O' in Normal mode.
 set formatoptions-=r " Do not automatically insert a comment leader after an enter
 set mouse=a
+set updatetime=100 " Recommended for vim-gitgutter
 setlocal spell spelllang=en_us
 
 "Tabs
