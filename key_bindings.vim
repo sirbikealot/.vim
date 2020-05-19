@@ -29,11 +29,13 @@ nnoremap Y y$
 " :inoremap <esc> <nop>
 
 "Search
-nnoremap \ :Ag<SPACE>
+" (!) ensures NO jump to first result
+cnoreabbrev Ack Ack!
 " map backslash to the_silver_searcher (ag)
 " This behaves slightly differently with fzf.vim (Fuzzyfinder) installed
 " :Ag is defined by fzf.vim, which displays results in a fzf window
 " instead of a quicklist
+nnoremap \ :Ag<SPACE>
 
 "Ctags
 nnoremap <leader>. :CtrlPTag<cr>
