@@ -35,6 +35,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'junegunn/fzf.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+Plugin 'kevinoid/vim-jsonc'
 "Plugin 'vim-syntastic/syntastic'
 "Plugin 'Raimondi/delimitMate'
 "Plugin 'heartsentwined/vim-emblem'
