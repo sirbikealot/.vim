@@ -93,5 +93,17 @@ let g:elm_setup_keybindings = 0
 let g:elm_format_autosave = 1
 " let g:syntastic_elm_checkers = ['elm_make']
 
+"ALE
+let g:ale_linters = {
+      \ 'elm': ['elm_ls'] ,
+      \ 'ruby' : ['standardrb', 'rubocop']
+      \}
+
+let g:ale_fixers = {
+      \ 'ruby' : ['standardrb', 'rubocop']
+      \}
+
+" let g:ale_fix_on_save = 1
+
 "Vroom
 "let g:vroom_clear_screen = 0
