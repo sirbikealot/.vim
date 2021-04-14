@@ -56,7 +56,14 @@ set statusline+=\ Buf:#%n                     " buffer number
 "FuzzyFind (fzf)
 set rtp+=/usr/local/opt/fzf
 "results window key bindings open result in split window accordingly:
+"https://github.com/junegunn/fzf/commit/2069bbc8b54fa77384e42274ee15af7b397af884#diff-0bfe3bc329555ec86b9677a27b1330b410e1071b4d5b8c5189743a2af74186e9R58
+function! s:build_quickfix_list(lines)
+   call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+   copen
+   cc
+ endfunction
 let g:fzf_action = {
+  \ 'ctrl-q': function('s:build_quickfix_list'),
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit' }
