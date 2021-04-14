@@ -34,6 +34,7 @@ Plugin 'w0rp/ale' " Replacement for syntastic, compat with vim 8
 Plugin 'vim-airline/vim-airline'
 Plugin 'junegunn/fzf.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 "Plugin 'vim-syntastic/syntastic'
 "Plugin 'Raimondi/delimitMate'
 "Plugin 'heartsentwined/vim-emblem'
