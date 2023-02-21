@@ -28,6 +28,8 @@ set formatoptions-=o " Do not automatically insert the current comment leader af
 set formatoptions-=r " Do not automatically insert a comment leader after an enter
 set mouse=a
 set updatetime=100 " Recommended for vim-gitgutter
+" set tags=~/workspaces/src/github.com/pharos-ei/ams/tags,~/workspaces/src/github.com/pharos-ei/ams/tmp/tags
+" set tags=./tags,tags
 setlocal spell spelllang=en_us
 
 "Tabs
@@ -95,15 +97,41 @@ let g:elm_format_autosave = 1
 
 "ALE
 let g:ale_linters = {
-      \ 'elm': ['elm_ls'] ,
       \ 'ruby' : ['standardrb', 'rubocop']
       \}
+" let g:ale_linters = {
+"       \ 'elm': ['elm_ls'] ,
+"       \ 'ruby' : ['standardrb', 'rubocop']
+"       \}
 
 let g:ale_fixers = {
-      \ 'ruby' : ['standardrb', 'rubocop']
+      \ 'ruby' : ['standardrb', 'rubocop'] ,
+      \ 'javascript' : ['eslint'] ,
       \}
+" let g:ale_fixers = {
+"       \ 'ruby' : ['standardrb', 'rubocop'] ,
+"       \ 'javascript' : ['eslint'] ,
+"       \ 'elm' : [ 'elm-format' ]
+"       \}
 
 " let g:ale_fix_on_save = 1
 
 "Vroom
 "let g:vroom_clear_screen = 0
+"
+"CoC
+set signcolumn=yes
+
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-references)
+" nmap <silent> gy <Plug>(coc-type-definition)
+" nmap <silent> gi <Plug>(coc-implementation)
+
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
