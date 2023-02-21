@@ -42,8 +42,17 @@ set completeopt=menuone,preview
 set infercase " Ignore case on insert completion
 
 "Colors
-colorscheme peachpuff
-set background=light
+" colorscheme gruvbox
+" set background=light
+
+" colorscheme bluewery-light
+" let g:lightline = { 'colorscheme': 'bluewery_light' }
+
+" colorscheme bluewery
+" let g:lightline = { 'colorscheme': 'bluewery' }
+
+" colorscheme peachpuff
+
 
 "Statusline
 set laststatus=2                              " always show the status bar

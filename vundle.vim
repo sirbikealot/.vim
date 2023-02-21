@@ -36,6 +36,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'kevinoid/vim-jsonc'
+Plugin 'relastle/bluewery.vim' " a vim editor color
 "Plugin 'vim-syntastic/syntastic'
 "Plugin 'Raimondi/delimitMate'
 "Plugin 'heartsentwined/vim-emblem'
