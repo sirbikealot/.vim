@@ -1,10 +1,9 @@
-"Source
-source ~/.vim/vundle.vim
+" Source
 source ~/.vim/auto_commands.vim
 source ~/.vim/key_bindings.vim
 source ~/.vim/functions.vim
 
-"General
+" General
 scriptencoding utf-8
 set t_Co=256
 set enc=utf-8
@@ -32,16 +31,16 @@ set updatetime=100 " Recommended for vim-gitgutter
 " set tags=./tags,tags
 setlocal spell spelllang=en_us
 
-"Tabs
+" Tabs
 set tabstop=2
 set shiftwidth=2
 set expandtab
 
-"Insert Completion
+" Insert Completion
 set completeopt=menuone,preview
 set infercase " Ignore case on insert completion
 
-"Colors
+" Colors
 " colorscheme gruvbox
 " set background=light
 
@@ -54,7 +53,7 @@ set infercase " Ignore case on insert completion
 " colorscheme peachpuff
 
 
-"Statusline
+" Statusline
 set laststatus=2                              " always show the status bar
 set statusline=%f                             " filename
 " set statusline+=%{fugitive#statusline()}      " git branch
@@ -64,10 +63,10 @@ set statusline+=%=                            " switch to the right
 set statusline+=\ Col:%v                      " column number
 set statusline+=\ Buf:#%n                     " buffer number
 
-"FuzzyFind (fzf)
+" FuzzyFind (fzf)
 set rtp+=/usr/local/opt/fzf
-"results window key bindings open result in split window accordingly:
-"https://github.com/junegunn/fzf/commit/2069bbc8b54fa77384e42274ee15af7b397af884#diff-0bfe3bc329555ec86b9677a27b1330b410e1071b4d5b8c5189743a2af74186e9R58
+" results window key bindings open result in split window accordingly:
+" https://github.com/junegunn/fzf/commit/2069bbc8b54fa77384e42274ee15af7b397af884#diff-0bfe3bc329555ec86b9677a27b1330b410e1071b4d5b8c5189743a2af74186e9R58
 function! s:build_quickfix_list(lines)
    call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
    copen
@@ -79,32 +78,14 @@ let g:fzf_action = {
   \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit' }
 
-"Command-T
-let g:CommandTWildIgnore=&wildignore .
-  \ ",**/.git/*" .
-  \ ",**/bower_components/*" .
-  \ ",**/node_modules/*" .
-  \ ",**/tmp/*"
+" Omnicompletion, Keyword Completion
+" let g:SuperTabDefaultCompletionType = "<c-x><c-o>" " Omnicomplete
 
-"Omnicompletion, Keyword Completion
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>" " Omnicomplete
-
-"Syntastic
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_enable_signs=1
-" let g:syntastic_ruby_checkers = ['rubocop', 'mri']
-" let g:statline_syntastic = 0 " Makes warningmsg in statusline work
-
-"Elm
+" Elm
 let g:elm_setup_keybindings = 0
-" let g:syntastic_always_poplulate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:elm_syntastic_show_warnings = 1
 let g:elm_format_autosave = 1
-" let g:syntastic_elm_checkers = ['elm_make']
 
-"ALE
+" ALE
 let g:ale_linters = {
       \ 'ruby' : ['standardrb', 'rubocop']
       \}
@@ -125,10 +106,10 @@ let g:ale_fixers = {
 
 " let g:ale_fix_on_save = 1
 
-"Vroom
+" Vroom
 "let g:vroom_clear_screen = 0
 "
-"CoC
+" CoC
 set signcolumn=yes
 
 " Use `[g` and `]g` to navigate diagnostics
@@ -144,3 +125,29 @@ nmap <silent> gr <Plug>(coc-references)
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
+
+" Plugins
+call plug#begin()
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'ervandew/supertab'
+" Plug 'mileszs/ack.vim' "
+Plug 'tomtom/tcomment_vim'
+" Plug 'ctrlpvim/ctrlp.vim' " tag searching
+" Plug 'majutsushi/tagbar' " tag searching
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'tpope/vim-surround'
+Plug 'godlygeek/tabular' " Aligns text within a block
+Plug 'tpope/vim-unimpaired' " Bracket navigation through file structure
+Plug 'tpope/vim-repeat' " Enable repeating supported plugin maps with '.'
+Plug 'vim-airline/vim-airline'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'w0rp/ale'
+" Plug 'kevinoid/vim-jsonc'
+Plug 'relastle/bluewery.vim' " a vim editor color
+
+call plug#end()
