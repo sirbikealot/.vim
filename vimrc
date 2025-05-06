@@ -151,6 +151,10 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
+" List code actions at current line
+nmap <silent> ga <Plug>(coc-codeaction-line)
+" Apply AutoFix to problem on the current line.
+nmap <silent> qf <Plug>(coc-fix-current)
 " nmap <silent> gy <Plug>(coc-type-definition)
 " nmap <silent> gi <Plug>(coc-implementation)
 
