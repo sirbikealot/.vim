@@ -143,6 +143,9 @@ let g:ale_fixers = {
 " CoC
 set signcolumn=yes
 
+" LLama disable inline info
+let g:llama_config = { 'show_info': 0 }
+
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
@@ -185,5 +188,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'w0rp/ale'
 " Plug 'kevinoid/vim-jsonc'
 Plug 'relastle/bluewery.vim' " a vim editor color
+Plug 'ggml-org/llama.vim'
 
 call plug#end()
