@@ -3,6 +3,34 @@ source ~/.vim/auto_commands.vim
 source ~/.vim/key_bindings.vim
 source ~/.vim/functions.vim
 
+" NOTES
+" :[Ex]plore,:[Vex]plore, :[Sex]plore -> netrw
+"     % create new file
+"     d create new directory
+"     R rename file/directory
+"     D delete file/directory
+"
+" :'<,'>normal A,
+"     appends the range with a comma
+"
+" :'<,'>!cat | json_pp
+"     pretty-prints json. Sub '<,'> with % to capture full page
+"
+" Abolish's case mutating algorithms can be applied to the word under the cursor
+" using the cr mapping (mnemonic: CoeRce) followed by one of the following
+" characters:
+"
+"   c:       camelCase
+"   p:       PascalCase
+"   m:       MixedCase (aka PascalCase)
+"   _:       snake_case
+"   s:       snake_case
+"   u:       SNAKE_UPPERCASE
+"   U:       SNAKE_UPPERCASE
+"   k:       kebab-case (not usually reversible; see |abolish-coercion-reversible|)
+"   -:       dash-case (aka kebab-case)
+"   .:       dot.case (not usually reversible; see |abolish-coercion-reversible|)
+
 " General
 scriptencoding utf-8
 set t_Co=256
