@@ -18,3 +18,5 @@ function! s:ag_with_opts(arg, bang)
 endfunction
 
 autocmd VimEnter * command! -nargs=* -bang Ag call s:ag_with_opts(<q-args>, <bang>0)
+" 2023-11-07 Chris Kraybill provided this variation, but it does not support delimiters like \b, so you can't match on a word that starts/ends a certain way. And it doesn't support regexp, e.g. \[A-Z\]arketParticipant
+" command! -bang -nargs=+ -complete=dir Ag call fzf#vim#ag_raw(<q-args>, fzf#vim#with_preview(), <bang>0)

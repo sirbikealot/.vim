@@ -106,6 +106,9 @@ let g:fzf_action = {
   \ 'ctrl-s': 'split',
   \ 'ctrl-v': 'vsplit' }
 
+" includes hidden (dot) files (except .git) in fzf searches
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+
 " Omnicompletion, Keyword Completion
 " let g:SuperTabDefaultCompletionType = "<c-x><c-o>" " Omnicomplete
 
