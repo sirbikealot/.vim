@@ -166,6 +166,7 @@ call plug#begin()
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-abolish'
 Plug 'ervandew/supertab'
 " Plug 'mileszs/ack.vim' "
 Plug 'tomtom/tcomment_vim'
